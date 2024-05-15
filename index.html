@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/vite.svg"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Vite + TS</title>
+	</head>
+	<body>
+		<div class="flex justify-center items-center fixed inset-0">
+			<canvas
+				id="canvas"
+				class="bg-slate-900 h-full w-auto"
+			></canvas>
+		</div>
+		<div
+			class="absolute top-5 right-5 p-3 border text-slate-300 rounded-md w-48"
+		>
+			<h1 class="text-lg">Sun</h1>
+			<div class="flex flex-col">
+				<label for="sun-size">Size</label>
+				<input type="range" />
+			</div>
+		</div>
+		<script
+			type="module"
+			src="/src/main.ts"
+		></script>
+	</body>
+</html>
